@@ -1,0 +1,59 @@
+html{
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color:#52527a;
+    border-width: 10px;
+  }
+  
+  .header{
+    margin:auto;
+    color: black;
+    font-size: 60px;
+  }
+  
+  .button {
+    background-color: white;
+    border-style:solid;
+    border-color: rgb(166, 77, 255);
+    border-width: 2px;
+    border-radius: 4px;
+    color: rgb(166, 77, 255);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right:16px;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    color: rgb(77, 195, 255, 0.6);
+  }
+  
+  .container{
+    margin-top:70px;
+    margin-bottom:70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+  
+  .hr{
+    margin:auto;
+     border: 1px solid grey;
+     width: 240px;
+     height: 0px;
+  }
+  
+  .contact{
+    
+  }
+  
+  .picture{
+    
+  }
+  
+  .overlay{
+    
+  }
