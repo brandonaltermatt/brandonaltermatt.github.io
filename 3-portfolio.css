@@ -2,12 +2,13 @@ body {
   margin: 0px;
 }
 
-.fab{
-  color:black;
+.projects{
+  padding:30px;
+  text-align:left;
 }
 
-.wrapper {
-  font-family: merriweather, sans-serif;
+.fab{
+  color:black;
 }
 
 h1{
@@ -52,7 +53,7 @@ header p{
   color: #828f96;
 }
 
-.side{
+.side ul{
   font-size:20px;
 }
 
@@ -102,19 +103,24 @@ header p{
 }
 .side {
   grid-area: sidebar;
-  padding-left:40px;
+  padding-left:30px;
 }
 .footer {
   grid-area: footer;
 }
+.projects{
+  grid-area:projects;
+}
 
 .wrapper {
+  font-family: merriweather, sans-serif;
   display: grid;
   grid-template-areas:
     "nav"
     "header"
     "content"
     "sidebar"
+    "projects"
     "footer";
 }
 
@@ -122,15 +128,27 @@ header p{
   .wrapper {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
-      "nav    nav     nav"
-      "header header  header"
-      ".      content sidebar"
-      "footer  footer footer";
+      "nav      nav      nav"
+      "header   header   header"
+      ".        content  sidebar"
+      "projects projects projects"
+      "footer   footer   footer";
   }
   ul li {
     float: right;
   }
   ul li.left {
     float: left;
+  }
+  .side{
+    padding-left:0px;
+  }
+  .projects{
+     text-align:center;
+  }
+  .projects .card{
+    display:inline-block;
+    margin-left:50px;
+    max-width:250px;
   }
 }
