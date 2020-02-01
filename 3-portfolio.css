@@ -12,11 +12,6 @@ body {
   font-family: merriweather, sans-serif;
 }
 
-/*All children have borders*/
-.container > * {
-  border: 1px solid grey;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,7 +28,6 @@ ul li a {
   padding: 15px 15px;
   text-decoration: none;
   letter-spacing: 2px;
-  border: 1px solid grey;
   color: black;
 }
 
@@ -41,6 +35,34 @@ a:hover,
 a:focus {
   color: #76b4ce;
   background: #e6f2ff;
+}
+
+header{
+  background-color:#f0f0f5;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #a4b4bd;
+  text-align:center;
+}
+
+header h1{
+  font-size:40px;
+  font-weight:700;
+  color: #3f4a50;
+  margin-bottom:40px;
+}
+
+header p{
+  font-size:25px;
+  font-weight:100;
+  color: #828f96;
+}
+
+.avatar{
+  margin-top:15px;
+  padding:10px;
+  background-color:white;
+  border:1px solid  #c1cacf;
 }
 
 .head {
