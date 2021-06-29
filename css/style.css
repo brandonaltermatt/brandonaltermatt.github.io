@@ -113,7 +113,6 @@ nav{ display: none;}
     .intro {
         display: grid;
         width: min-content;
-        max-width: 100%;
         margin: 0 auto;
         column-gap: 1em;
         grid-template-areas: 
@@ -138,4 +137,13 @@ nav{ display: none;}
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+}
+
+/* My experience section */
+
+.my-experience{
+    background-color: var(--clr-dark);
+    background-image: url(../img/stock-coding.jpg);
+    background-size: cover;
+    color: var(--clr-light);
 }
