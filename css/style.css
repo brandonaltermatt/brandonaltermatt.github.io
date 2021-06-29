@@ -76,7 +76,6 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title--intro{
     font-weight: var(--fw-reg);
-    max-width: 100%;
 }
 
 .section__title--intro strong{
@@ -137,5 +136,6 @@ nav{ display: none;}
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        max-width: 100%;
     }
 }
