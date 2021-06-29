@@ -48,7 +48,6 @@ body{
 
 section{
     padding: 5em 2em;
-    max-width: 100%;
 }
 
 img{
@@ -77,6 +76,7 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title--intro{
     font-weight: var(--fw-reg);
+    max-width: 100%;
 }
 
 .section__title--intro strong{
