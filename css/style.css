@@ -37,6 +37,10 @@
 
 /* General Styles */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -135,10 +139,6 @@ header{
     padding: 1em;
 }
 
-.logo{
-    max-width: 100px;
-}
-
 .nav{
     position: fixed;
     background: var(--clr-dark);
@@ -167,7 +167,7 @@ header{
 .nav__link{
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
@@ -186,6 +186,18 @@ header{
     z-index: 1000;
 }
 
+.nav-open .nav{
+    transform: translateX(0%)
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.25turn);
+}
+
 .hamburger{
     display: block;
     position: relative;
@@ -194,7 +206,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after{
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -359,6 +371,15 @@ header{
 .portfolio__item{
     background: var(--clr-accent);
     overflow: hidden;
+}
+
+.portfolio__item--body{
+    position: absolute;
+    top:0;
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
 }
 
 .portfolio__img{
