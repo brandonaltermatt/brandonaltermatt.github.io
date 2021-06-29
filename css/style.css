@@ -145,5 +145,8 @@ nav{ display: none;}
     background-color: var(--clr-dark);
     background-image: url(../img/stock-coding.jpg);
     background-size: cover;
+    background-blend-mode: darken;
     color: var(--clr-light);
+    text-align: center;
 }
+
