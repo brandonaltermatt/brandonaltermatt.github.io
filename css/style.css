@@ -365,7 +365,10 @@ header{
 
 .portfolio{
     display: grid;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1400px;
 }
 
 .portfolio__item{
@@ -396,7 +399,7 @@ header{
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img{
     transform: scale(1.2);
-    opacity: .5;
+    opacity: 0;
 }
 
 /* Footer */
