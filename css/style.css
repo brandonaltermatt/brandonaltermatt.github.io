@@ -417,17 +417,8 @@ header{
     text-decoration: none;
 }
 
-.footer__link{
+.footer__body{
     font-weight: var(--fw-bold);
-}
-
-.footer__link:hover,
-.social-list__link:hover{
-    opacity: .7;
-}
-
-.footer__link:hover{
-    text-decoration: underline;
 }
 
 .social-list{
@@ -444,4 +435,8 @@ header{
 
 .social-list__link{
     padding: .5em;
+}
+
+.social-list__item:hover{
+    opacity: .7;
 }
