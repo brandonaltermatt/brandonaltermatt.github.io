@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #fcab82;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -394,7 +394,7 @@ header{
   width: 350px;
   transition: transform .5s;
   position: relative;
-  height: 430px;
+  height: 350px;
   border: 1px solid var(--clr-light);
   border: 1px solid;
   border-radius: 6px;
@@ -429,12 +429,13 @@ a:nth-of-type(4) .card_wrapper{
   flex: 1;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
+  padding-bottom: 5em;
 }
 
 .project_title{
   margin-bottom: 0;
   padding-top: 15px;
-  color: #5D6771;
+  color: #fca14c;
 }
 
 .project_technologies{
