@@ -368,56 +368,70 @@ header{
 }
 
 .wrapper{
-    max-width: 1400px;
-    margin: 20px auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  font-size: 13px;
+  letter-spacing: 0.77px;
+  color: var(--clr-dark);
+}
+
+.wrapper a{
+  text-decoration: none;
+  color: inherit;
+  height: 425px;
+  margin-bottom: 50px;
+}
+
+.wrapper{
+  max-width: 1500px;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card_wrapper{
-    width: 350px;
-    transition: transform .5s;
-    position: relative;
-    margin-bottom: 100px;
-    height: 350px;
-    border: 1px solid #DEDCDC;
-    border-radius: 6px;
-    background: var(--clr-accent);
-    display: flex;
-    flex-direction: column;
-    background-image: url('https://cdn.dribbble.com/users/77760/screenshots/2042501/potato.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 350px;
+  transition: transform .5s;
+  position: relative;
+  height: 430px;
+  border: 1px solid var(--clr-light);
+  border: 1px solid;
+  border-radius: 6px;
+  background: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://cdn.dribbble.com/users/77760/screenshots/2042501/potato.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
- 
+
 a:nth-child(2) .card_wrapper{
-    background-image: url('https://cdn.dribbble.com/users/4605/screenshots/1757843/snap.png');
+  background-image: url('https://cdn.dribbble.com/users/4605/screenshots/1757843/snap.png');
 }
 
 a:nth-of-type(3) .card_wrapper{
-    background-image: url('https://cdn.dribbble.com/users/33073/screenshots/2425824/800.png');
+  background-image: url('https://cdn.dribbble.com/users/33073/screenshots/2425824/800.png');
 }
 
 a:nth-of-type(4) .card_wrapper{
-    background-image: url('https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png')
+  background-image: url('https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png');
 }
 
 .project_summary{
-    margin-top: 260px;
-    position: relative;
-    background: #fff;
-    flex: 1;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+  margin-top: 260px;
+  position: relative;
+  padding: 0 20px;
+  background: var(--clr-light);
+  flex: 1;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
 .project_title{
-    margin-bottom: 1em;
-    padding-top: 15px;
-    color: #5D6771;
+  margin-bottom: 0;
+  padding-top: 15px;
+  color: #5D6771;
 }
 
 .created_date{
@@ -426,50 +440,15 @@ a:nth-of-type(4) .card_wrapper{
 }
 
 .project_desc{
-    margin: 0;
-    font-weight: 300;
-    width: 100%;
+  margin: 0;
+  font-weight: 300;
+  width: 100%;
 }
 
 a:hover .card_wrapper{
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.09);
-  transform: scale3d(1.008, 1.008, 1);
+  transform: scale3d(1.1, 1.1, 1);
 }
-
-  /*
-.portfolio{
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1400px;
-}
-
-.portfolio__item{
-    background: var(--clr-accent);
-    overflow: hidden;
-    align-items: center;
-}
-
-.portfolio__img{
-    transition: 
-        transform 750ms cubic-bezier(.5,0,.5,1),
-        opacity 250ms linear;
-}
-
-.portfolio__item:focus{
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img{
-    transform: scale(1.2);
-    opacity: 0.5;
-}
-*/
-
-
 
 /* Footer */
 
@@ -506,6 +485,7 @@ a:hover .card_wrapper{
     padding: .5em;
 }
 
-.social-list__item:hover{
+.social-list__link:hover,
+.social-list__link:focus{
     opacity: .7;
 }
