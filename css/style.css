@@ -435,6 +435,7 @@ a:nth-of-type(4) .card_wrapper{
 }
 
 .project_title{
+    border-top: 4px solid #F8864F;
   margin-bottom: 0;
   padding-top: 15px;
   color: #fca14c;
