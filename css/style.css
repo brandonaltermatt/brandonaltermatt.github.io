@@ -489,3 +489,9 @@ a:hover .card_wrapper{
 .social-list__link:focus{
     opacity: .7;
 }
+
+.footnote{
+    margin-top: 3em;
+    font-size: var(--fs-body);
+    opacity: .5;
+}
