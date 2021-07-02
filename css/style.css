@@ -401,21 +401,24 @@ header{
   background: var(--clr-light);
   display: flex;
   flex-direction: column;
-  background-image: url('https://cdn.dribbble.com/users/77760/screenshots/2042501/potato.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+a:nth-child(1) .card_wrapper{
+    background-image: url('../img/vegetable-picture.png');
+  }
+
 a:nth-child(2) .card_wrapper{
-  background-image: url('https://cdn.dribbble.com/users/4605/screenshots/1757843/snap.png');
+  background-image: url('../img/irc-logo.png');
 }
 
 a:nth-of-type(3) .card_wrapper{
-  background-image: url('https://cdn.dribbble.com/users/33073/screenshots/2425824/800.png');
+  background-image: url('../img/apache-logo.png');
 }
 
 a:nth-of-type(4) .card_wrapper{
-  background-image: url('https://cdn.dribbble.com/users/25514/screenshots/2595669/payment_plans_illustrations_ramotion.png');
+  background-image: url('../img/portswigger-logo.png');
 }
 
 .project_summary{
@@ -434,7 +437,7 @@ a:nth-of-type(4) .card_wrapper{
   color: #5D6771;
 }
 
-.created_date{
+.project_technologies{
   margin: 10px 0;
   color: #8A8EA0;
 }
