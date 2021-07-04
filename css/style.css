@@ -109,8 +109,7 @@ h3 {font-size: var(--fs-h3)}
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
 }
 
 .btn:hover{
